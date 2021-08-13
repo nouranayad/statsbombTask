@@ -53,12 +53,24 @@ describe('List', () => {
 
     expect(actual).toEqual(expected)
   })
+  it('should remove b from start of list a', () => {
+    const list = List({ initial: [1, 2, 3, 4], initialOrder: true  })
+    const expected = [2, 3,4];
+    const actual = list.remove(1).items
 
+    expect(actual).toEqual(expected)
+  })
+  it('should remove b from the middle of list a', () => {
+    const list = List({ initial: [1, 2, 3, 4], initialOrder: true  })
+    const expected = [1, 2, 4];
+    const actual = list.remove(3).items
+
+    expect(actual).toEqual(expected)
+  })
   it('should findIndex of b at list a', () => {
     const list = List({ initial: [1, 2, 3, 4], initialOrder: true  })
     const expected = 2;
     const actual = list.findIndex(3)
-
     expect(actual).toEqual(expected)
   })
 
