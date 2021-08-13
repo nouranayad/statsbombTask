@@ -1,0 +1,39 @@
+{
+  "name": "javascript-task",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "benchmark": "NODE_OPTIONS=--experimental-vm-modules node benchmark.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "benny": "^3.6.15",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "jest": "^27.0.6"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {}
+  },
+  "dependencies": {
+    "fast-sort": "^3.0.2",
+    "hpc-algorithms": "^1.1.0",
+    "match-sorter": "^6.3.0",
+    "radix-sort": "^0.1.1",
+    "radixsort": "^1.0.0",
+    "ramda": "^0.27.1",
+    "sort-array": "^4.1.4",
+    "timsort": "^0.3.0"
+  }
+}
