@@ -18,3 +18,8 @@ to obtain good preformance for our software we use a fine tuned data sturcture w
 ## Don't forget, run the tests and the banchmark using:
 - `npm run test`
 - `npm run benchmark`
+
+Note:
+I faced Heap out of memory error due to using Array.prototype.push() which I fixed by running the benchmark using this command:
+- `node --max-old-space-size=4096 benchmark.js`
+I am not sure if you will face this error in your environment but if you did you can use this command.
